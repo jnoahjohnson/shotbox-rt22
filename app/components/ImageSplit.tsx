@@ -1,6 +1,32 @@
 import { useEffect, useRef, useState } from "react";
 
 export default function ImageSplit() {
+   const [currentImage, setCurrentImage] = useState<number>(0);
+
+  const options = {
+    root: null,
+    rootMargin: "0px",
+    threshhold: 1.0,
+  };
+
+  const containerRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      const [entry] = entries;
+      console.log(entry);
+      if (entry.isIntersecting) {
+        setCurrentImage(1);
+      }
+    }, options);
+
+    if (containerRef.current) observer.observe(containerRef.current);
+
+    return () => {
+      if (containerRef.current) observer.unobserve(containerRef.current);
+    };
+  }, [containerRef, options]);
+  
   return (
     <section className="relative bg-lightbg -mx-4 px-4 z-20 -mt-12 flex flex-col">
       <div className="flex w-full">

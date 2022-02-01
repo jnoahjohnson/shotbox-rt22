@@ -468,10 +468,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-backdrop-sepia:  ;
 }
 
-.absolute {
-  position: absolute;
-}
-
 .relative {
   position: relative;
 }
@@ -481,32 +477,24 @@ Ensure the default browser behavior of the `hidden` attribute.
   position: sticky;
 }
 
-.top-5 {
-  top: 1.25rem;
-}
-
 .top-0 {
   top: 0px;
+}
+
+.top-5 {
+  top: 1.25rem;
 }
 
 .bottom-5 {
   bottom: 1.25rem;
 }
 
-.bottom-0 {
-  bottom: 0px;
-}
-
-.top-1\/2 {
-  top: 50%;
-}
-
-.right-0 {
-  right: 0px;
-}
-
 .isolate {
   isolation: isolate;
+}
+
+.z-20 {
+  z-index: 20;
 }
 
 .z-50 {
@@ -517,8 +505,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   z-index: 0;
 }
 
-.z-20 {
-  z-index: 20;
+.-mx-4 {
+  margin-left: -1rem;
+  margin-right: -1rem;
 }
 
 .mx-auto {
@@ -526,14 +515,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: auto;
 }
 
-.-mx-4 {
-  margin-left: -1rem;
-  margin-right: -1rem;
+.-mt-12 {
+  margin-top: -3rem;
 }
 
-.my-auto {
-  margin-top: auto;
-  margin-bottom: auto;
+.ml-10 {
+  margin-left: 2.5rem;
 }
 
 .ml-1 {
@@ -568,32 +555,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 3rem;
 }
 
-.-mt-10 {
-  margin-top: -2.5rem;
-}
-
-.-mt-12 {
-  margin-top: -3rem;
-}
-
-.mt-10 {
-  margin-top: 2.5rem;
-}
-
-.mb-10 {
-  margin-bottom: 2.5rem;
-}
-
-.ml-10 {
-  margin-left: 2.5rem;
-}
-
-.inline-block {
-  display: inline-block;
-}
-
 .flex {
   display: flex;
+}
+
+.h-screen {
+  height: 100vh;
 }
 
 .h-full {
@@ -604,32 +571,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 60vh;
 }
 
-.h-\[800px\] {
-  height: 800px;
-}
-
-.h-screen {
-  height: 100vh;
-}
-
-.h-auto {
-  height: auto;
-}
-
-.h-24 {
-  height: 6rem;
-}
-
-.w-56 {
-  width: 14rem;
-}
-
 .w-full {
   width: 100%;
-}
-
-.w-1\/2 {
-  width: 50%;
 }
 
 .w-2\/3 {
@@ -640,16 +583,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 33.333333%;
 }
 
+.w-56 {
+  width: 14rem;
+}
+
+.max-w-lg {
+  max-width: 32rem;
+}
+
 .max-w-6xl {
   max-width: 72rem;
 }
 
 .max-w-xl {
   max-width: 36rem;
-}
-
-.max-w-lg {
-  max-width: 32rem;
 }
 
 .flex-col {
@@ -682,17 +629,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   overflow-x: hidden;
 }
 
-.rounded-md {
-  border-radius: 0.375rem;
-}
-
 .rounded {
   border-radius: 0.25rem;
 }
 
-.bg-primary-light {
-  --tw-bg-opacity: 1;
-  background-color: hsl(181 47% 86% / var(--tw-bg-opacity));
+.rounded-md {
+  border-radius: 0.375rem;
 }
 
 .bg-lightbg {
@@ -700,14 +642,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: hsl(300 0% 94% / var(--tw-bg-opacity));
 }
 
-.bg-blue-800 {
+.bg-primary-light {
   --tw-bg-opacity: 1;
-  background-color: rgb(30 64 175 / var(--tw-bg-opacity));
-}
-
-.bg-green-800 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(22 101 52 / var(--tw-bg-opacity));
+  background-color: hsl(181 47% 86% / var(--tw-bg-opacity));
 }
 
 .bg-gradient-to-b {
@@ -733,6 +670,11 @@ Ensure the default browser behavior of the `hidden` attribute.
      object-position: center;
 }
 
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -753,11 +695,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 0.5rem;
 }
 
-.px-4 {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
 .pt-28 {
   padding-top: 7rem;
 }
@@ -766,14 +703,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   text-align: center;
 }
 
-.text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-}
-
 .text-5xl {
   font-size: 3rem;
   line-height: 1;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 .text-2xl {
@@ -781,22 +718,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 2rem;
 }
 
-.text-6xl {
-  font-size: 3.75rem;
-  line-height: 1;
-}
-
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
+.font-bold {
+  font-weight: 700;
 }
 
 .font-semibold {
   font-weight: 600;
-}
-
-.font-bold {
-  font-weight: 700;
 }
 
 .text-white {
