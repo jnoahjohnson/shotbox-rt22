@@ -5,7 +5,7 @@ export default function Index() {
   return (
     <div className="px-4 isolate">
       <NavBar />
-      <section className="flex flex-col items-center w-full pt-28 max-w-6xl mx-auto md:items-center md:flex-row sticky top-0 z-0 -mt-20">
+      <section className="flex flex-col items-center w-full pt-32 max-w-6xl mx-auto md:items-center md:flex-row sticky top-0 z-0 -mt-20">
         <div className="md:w-5/12 h-full flex flex-col items-start justify-center mb-16">
           <h1 className="text-5xl font-bold mb-2 text-center md:text-left">
             <span className="text-primary">Incredible Stories</span> Are Meant
@@ -21,7 +21,7 @@ export default function Index() {
           className="md:w-7/12"
         />
       </section>
-      <div className="relative -mx-4 -mt-8 z-20">
+      <div className="relative -mx-4 -mt-4 z-20">
         <svg
           width="1728"
           height="350"
@@ -35,7 +35,7 @@ export default function Index() {
           />
         </svg>
       </div>
-      <section className="relative bg-lightbg -mx-4 px-4 z-20 -mt-72">
+      <section className="relative bg-lightbg -mx-4 px-4 z-20 -mt-64">
         <div className="text-5xl font-bold md:text-left max-w-xl mx-auto mb-32">
           <h1 className="text-center">
             <span className="text-primary">
@@ -54,7 +54,7 @@ export default function Index() {
           <h2 className="text-center">We promise.</h2>
         </div>
 
-        <div className="sticky bottom-5 h-screen/img mb-12 max-w-6xl mx-auto">
+        <div className="sticky bottom-1 h-screen/3 mb-12 max-w-6xl mx-auto">
           <img
             src="/images/shotbox-main.jpg"
             alt="Shotbox on a shelf"
@@ -63,8 +63,8 @@ export default function Index() {
         </div>
       </section>
       <ImageSplit />
-      <section className="relative bg-lightbg -mx-4 px-4 z-20 -mt-12 h-screen">
-        <div className="text-5xl font-bold md:text-left max-w-xl mx-auto mb-32">
+      <section className="relative bg-lightbg -mx-4 px-4 z-20 -mt-0 h-screen">
+        <div className="text-5xl font-bold md:text-left max-w-xl mx-auto mb-32 flex items-center h-full">
           <h1 className="text-center">
             And with the perfect lighting built in, the
             <span className="text-primary"> results are incredible</span>{" "}
