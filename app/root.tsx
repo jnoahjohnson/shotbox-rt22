@@ -1,15 +1,25 @@
 import {
   Links,
+  LinksFunction,
   LiveReload,
   Meta,
   Outlet,
   Scripts,
-  ScrollRestoration
+  ScrollRestoration,
 } from "remix";
 import type { MetaFunction } from "remix";
+import styles from "./tailwind.css";
+
+export const links: LinksFunction = () => {
+  return [{ rel: "stylesheet", href: styles }];
+};
 
 export const meta: MetaFunction = () => {
-  return { title: "New Remix App" };
+  return {
+    title: "SHOTBOX",
+    description:
+      "Capture your incredible stories with the SHOTBOX Storyteller Bundle.",
+  };
 };
 
 export default function App() {
@@ -21,7 +31,7 @@ export default function App() {
         <Meta />
         <Links />
       </head>
-      <body>
+      <body className="overflow-x-hidden">
         <Outlet />
         <ScrollRestoration />
         <Scripts />
