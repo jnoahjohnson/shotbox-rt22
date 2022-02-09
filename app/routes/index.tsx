@@ -1,6 +1,27 @@
 import ImageSplit from "~/components/ImageSplit";
 import NavBar from "~/components/NavBar";
 
+const productImages = [
+  {
+    src: "https://res.cloudinary.com/stashed/image/upload/q_auto:good/v1644420631/Shotbox/craft-zoomed-in-insta_afzmid.jpg",
+  },
+  {
+    src: "https://res.cloudinary.com/stashed/image/upload/q_auto:good/v1644420623/Shotbox/photo-example_vgav1b.jpg",
+  },
+  {
+    src: "https://res.cloudinary.com/stashed/image/upload/q_auto:good/v1644420607/Shotbox/31616865803_b663922c5d_o_oqzaxa.png",
+  },
+  {
+    src: "https://res.cloudinary.com/stashed/image/upload/q_auto:good/v1644420605/Shotbox/21044298043_a5d3e196ef_o_djczzm.jpg",
+  },
+  {
+    src: "https://res.cloudinary.com/stashed/image/upload/q_auto:good/v1644420604/Shotbox/scrapbook-example_u0cugn.jpg",
+  },
+  {
+    src: "https://res.cloudinary.com/stashed/image/upload/q_auto:good/v1644420588/Shotbox/49861450687_571fc2a159_o_i0mzcy.jpg",
+  },
+];
+
 export default function Index() {
   return (
     <div className="isolate px-4">
@@ -63,13 +84,24 @@ export default function Index() {
         </div>
       </section>
       <ImageSplit />
-      <section className="relative z-20 -mx-4 -mt-0 bg-lightbg px-4">
-        <div className="sticky top-0 bottom-0 mx-auto mb-32 flex h-full max-w-xl items-center text-5xl font-bold md:text-left">
+      <section className="relative z-20 -mx-4 -mt-0 min-h-full bg-lightbg px-4">
+        <div className="sticky top-0 bottom-0 z-10 mx-auto mb-32 flex h-screen max-w-xl items-center text-5xl font-bold md:text-left">
           <h1 className="text-center">
             And with the perfect lighting built in, the
             <span className="text-primary"> results are incredible</span>{" "}
           </h1>
         </div>
+        <div className="relative z-20 mx-auto grid h-full max-w-4xl grid-cols-2 gap-2">
+          {productImages.map((image, index) => (
+            <img
+              src={image.src}
+              className={`aspect-square h-full w-full rounded-sm border-8 border-solid border-white object-cover`}
+            />
+          ))}
+        </div>
+      </section>
+      <section className="relative z-20 -mx-4 -mt-0 bg-lightbg px-4">
+        <a href="/">Buy Now</a>
       </section>
     </div>
   );
