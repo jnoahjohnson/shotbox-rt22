@@ -101,15 +101,19 @@ export default function Index() {
         </div>
       </section>
       <section className="relative z-20 -mx-4 -mt-0 bg-lightbg px-4 py-16">
-        <div className="relative mx-auto flex h-full w-full max-w-6xl flex-row items-end justify-between overflow-hidden rounded shadow">
+        <div className="relative mx-auto flex h-full w-full max-w-6xl flex-row items-stretch justify-between overflow-hidden rounded shadow">
           <img
             className="w-1/3"
             src="https://res.cloudinary.com/stashed/image/upload/v1645586941/Shotbox/SHOTBOXmpsbannertall01_333e9e02-a47d-4eeb-a30b-ca356c232444_rpfaqz.jpg"
           />
-          <div className="items-startpx-12 flex w-full flex-col justify-items-stretch">
-            <h1 className="text-4xl">Storytelling Bundle</h1>
-            <p>Special!</p>
-            <a href="/buy" target="_blank">
+          <div className="flex w-full flex-col items-start justify-start bg-gray-50 py-12 px-12">
+            <h1 className="text-4xl font-bold">Storytelling Bundle</h1>
+            <p className="mb-12">Special!</p>
+            <a
+              href="/buy"
+              target="_blank"
+              className="rounded bg-primary-dark px-4 py-2 text-lg font-semibold text-white"
+            >
               Buy Now
             </a>
           </div>
